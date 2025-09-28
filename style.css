@@ -1,0 +1,208 @@
+:root {
+    --text: #111;
+    --muted: #555;
+    --border: #e3e3e3;
+    --accent: #1e88e5;
+    --bg: #fff;
+}
+.resume__name { text-align: center;
+    font-size: 28px;
+    font-family: "Times New Roman";
+}
+
+*{
+    font-family: "Times New Roman";
+}
+
+.resume__contact {
+    text-align: center;
+}
+
+.resume__contact-item-bullet{
+    list-style: disc;
+    padding-left: 0.000001px; /* space for bullets */
+    text-align: left;      /* bullets look best left-aligned */
+
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.5;
+}
+
+.resume {
+    max-width: 900px;
+    margin: 32px auto;
+    padding: 24px;
+    background: #fff;
+}
+
+.resume__header {
+    display: grid;
+    gap: 12px;
+    align-items: start;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 16px;
+}
+
+.resume__name {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+
+.resume__contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 4px;
+}
+
+.resume__contact-item {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.resume__contact .label {
+    font-weight: 600;
+    color: var(--text);
+    margin-right: 6px;
+}
+
+.resume__contact .value {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.resume__contact a.value:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+
+.print-btn {
+    justify-self: start;
+    margin-top: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.print-btn:hover {
+    filter: brightness(0.95);
+}
+
+.section {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.section:last-of-type {
+    border-bottom: 0;
+}
+
+.section__title {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.section__body {
+    margin: 0;
+    color: var(--text);
+}
+
+.experience {
+    padding: 10px 0;
+}
+
+.experience__header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    align-items: baseline;
+}
+
+.experience__role {
+    margin: 0;
+    font-size: 16px;
+}
+
+.experience__company {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.experience__dates {
+    color: var(--muted);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.experience__points {
+    margin: 8px 0 0 18px;
+}
+
+.experience__points li {
+    margin: 6px 0;
+}
+
+/* Print styles */
+@media print {
+    :root {
+        --accent: #000;
+    }
+
+    .print-btn {
+        display: none;
+    }
+
+    .resume {
+        margin: 0;
+        padding: 0.5in;
+        box-shadow: none;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .resume__header {
+        border: none;
+        padding-bottom: 0;
+    }
+
+    .section {
+        border-color: #bbb;
+    }
+}
+
+/* Small screens */
+@media (max-width: 640px) {
+    .resume {
+        padding: 16px;
+        margin: 0;
+    }
+    .experience__header {
+        grid-template-columns: 1fr;
+    }
+    .experience__dates {
+        justify-self: start;
+    }
+}
