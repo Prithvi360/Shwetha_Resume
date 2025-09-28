@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume — SWETHA SUBASH</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="resume">
+    <header class="resume__header">
+        <h1 class="resume__name">SWETHA SUBASH</h1>
+        <ul class="resume__contact">
+            <li class="resume__contact-item">
+                <span class="label">Address:</span>
+                <span class="Value">Plot No : 13, Viman Nagar Main Road, Pozhichalur, Chennai - 74</span>
+            </li>
+            <li class="resume__contact-item">
+                <span class="label">Phone:</span>
+                <a class="value" href="tel:[PHONE_NUMBER]">+91 7550233585</a>
+                <span class="label" style="margin-left: 20px;">Email:</span>
+                <a class="value" href="mailto:[EMAIL_ADDRESS]">swemeeru3001@gmail.com</a>
+            </li>
+            <li class="resume__contact-item" style="text-align: center;">
+                <span class="label">LinkedIn:</span>
+                <a class="value" href="www.linkedin.com/in/swetha-subash-22524220a" target="_blank" rel="noopener">SwethaSubhash-linkedin</a>
+            </li>
+        </ul>
+        <button class="print-btn" type="button" onclick="window.print()">Print / Save as PDF</button>
+    </header>
+
+    <main>
+        <section class="section-summary">
+            <h2 class="section__title">Summary</h2>
+            <p class="section__body">
+                Passionate MSW student specializing in Human Resources, equipped with strong foundational knowledge of HR processes, employee engagement, and labor law compliance. Skilled in effective communication, teamwork, and problem solving, with internship experiences supporting core HR functions in the manufacturing sector. Eager to apply academic insights to practical human resource initiatives, contribute to organizational growth, and develop professional expertise in a dynamic work environment.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Internship Experience</h2>
+
+            <article class="experience">
+                <header class="experience__header">
+                    <div>
+                        <h3 class="experience__role">HR Intern</h3>
+                        <div class="experience__company">Momentive Performance Materials Ltd., Oragadam</div>
+                    </div>
+                    <div class="experience__dates">Aug 2025 – Sep 2025</div>
+                </header>
+                <ul class="experience__points">
+                    <li>Observed end-to-end HR operations: onboarding, payroll, policy compliance, statutory register maintenance, wage structure, and audit processes.</li>
+                    <li>Gained exposure to recruitment methods, employee life cycle, background verification, training need analysis (TNA), succession planning, and employee engagement initiatives.</li>
+                    <li>Shadowed cross-functional meetings and walkthroughs across departments (manufacturing, quality, EHS, warehouse, OHC, customer service), learning about process flows, compliance, safety systems, performance metrics, and Lean/5S/OEE principles.</li>
+                    <li>Observed compliance for contract labor, vendor management, welfare measures, employee benefits, statutory tax filing, and HRMS software (SAP, Replicon, Workday).</li>
+                    <li>Understood organizational policies, audit procedures (IMS/Social), quality circles, operational excellence (OPEX), and CSR initiatives through interaction, review, and workplace exposure.</li>
+                </ul>
+            </article>
+
+            <article class="experience">
+                <header class="experience__header">
+                    <div>
+                        <h3 class="experience__role">HR Intern</h3>
+                        <div class="experience__company">Uno Minda AW4W Division, Oragadam</div>
+                    </div>
+                    <div class="experience__dates">May 2025 – Jun 2025</div>
+                </header>
+                <ul class="experience__points">
+                    <li>
+                        <strong>Human Resource Operations and Compliance:</strong>
+                        Gained realtime exposure to key HR functions including recruitment, onboarding, payroll processing, manpower planning, time office, attendance management using Excel, and maintenance of employee records.
+                    </li>
+                    <li>
+                        <strong>Training, Safety, and Employee Welfare:</strong>
+                        Observed the training programs, safety compliance, employee welfare activities, and documentation ensuring adherence to labor laws and organizational policies.
+                    </li>
+                    <li>
+                        <strong>Project Support and Skill Development:</strong>
+                        Contributed to an Attrition Analysis project by collecting, verifying, and analyzing data of contract laborers, conducted exit interviews for shopfloor workers and documented the responses in Excel, provided recommendations to improve workforce stability &amp; training methods. Developed cross-cultural communication, teamwork, and problem-solving skills essential for human resource roles.
+                    </li>
+                </ul>
+            </article>
+
+            <article class="experience">
+                <header class="experience__header">
+                    <div>
+                        <h3 class="experience__role">Social Work Trainee</h3>
+                        <div class="experience__company">Center for Women’s Development &amp; Research (CWDR), Tiruvanmiyur, Chennai</div>
+                    </div>
+                    <div class="experience__dates">Dec 2024 – Mar 2025</div>
+                </header>
+                <ul class="experience__points">
+                    <li>Trained and coordinated young girls in performing street plays to raise community awareness on education and early marriage.</li>
+                    <li>Conducted field visits in nearby slum communities to assess and document residents' socioeconomic conditions.</li>
+                    <li>Facilitated Sexual and Reproductive Health and Rights (SRHR) awareness sessions for adolescent girls.</li>
+                    <li>Organized and implemented mental health awareness programs for college students in the community.</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer class="resume__footer">
+        <p>© <span id="year"></span> SWETHA SUBASH</p>
+    </footer>
+</div>
+
+<script>
+    // Update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
